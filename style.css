@@ -1,0 +1,39 @@
+.segmented-control {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 20.4rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+  
+}
+    
+#btn {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 2rem;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#grad1 {
+    height: 55px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue);
+  }
+  #rcorners1 {
+    border-radius: 25px;
+    background: white;
+    padding: 20px; 
+    width: 2px;
+    height: 1px;  
+  }
