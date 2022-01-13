@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="calculo">
         <h1>CALCULADORA IMC</h1>
-        <form >
+        <form id="valores"> 
           <fieldset>
             <legend>Descubre tu indice de masa corporal</legend>
             <div class="segmented-control">
@@ -30,15 +32,15 @@
             <br />
 
             <label>Edad</label>
-            <input type="number" id="edad" value="Edad" /><br /><br />
+            <input type="number" id="edad" value="" /><br /><br />
 
             <label>Peso</label>
-            <input type="number" id="peso" value="Peso" /><br /><br />
+            <input type="number" id="peso" value="" /><br /><br />
 
             <label>Altura</label>
-            <input type="number" id="altura" value="Altura" /><br /><br />
+            <input type="number" id="altura" value="" /><br /><br />
 
-            <button id="btn">calcular</button>
+            <button type="submit" id="btn">calcular</button>
 
           </fieldset>
         </form>
@@ -48,18 +50,25 @@
       <h3>Resultado</h3>
       <h2 id='Textoresultado'>
 
-
-
       </h2>
       <h4 id='ideal'> </h4>
 
 
       <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
-        
+     
         </div>
         <p id="rcorners1">    </p>
         <h3 id='itm1'> </h3>
     </div>
-    <script src="./scripts/index.js"></script>
+
+    <div id="estadistica">
+      <h1>Estadistica</h1>
+
+  </div>
+    <script type="module" src="./scripts/index.js"></script>
+    <script src="./graficas/morris.min.js"></script>
+    <script type="module" src="./data/data.js" ></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
   </body>
 </html>
