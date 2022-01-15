@@ -13,11 +13,11 @@
     <div class="container">
       <div class="calculo">
         <h1>CALCULADORA IMC</h1>
-        <form id="valores"> 
+        <form id="valores">
           <fieldset>
             <legend>Descubre tu indice de masa corporal</legend>
             <div class="segmented-control">
-              <input type="radio" name="radio2"  id="female" checked />
+              <input type="radio" name="radio2" id="female" checked />
               <label for="tab-1" class="segmented-control__1">
                 <img
                   src="https://img.icons8.com/stickers/75/000000/user-female.png"
@@ -41,34 +41,35 @@
             <input type="number" id="altura" value="" /><br /><br />
 
             <button type="submit" id="btn">calcular</button>
-
           </fieldset>
         </form>
       </div>
     </div>
     <div id="Tblresult">
       <h3>Resultado</h3>
-      <h2 id='Textoresultado'>
+      <h2 id="Textoresultado"></h2>
+      <h3 id="ideal"></h3>
 
-      </h2>
-      <h4 id='ideal'> </h4>
-
-
-      <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
-     
-        </div>
-        <p id="rcorners1">    </p>
-        <h3 id='itm1'> </h3>
+      <div
+        id="grad1"
+        style="
+          text-align: center;
+          margin: auto;
+          color: #888888;
+          font-size: 40px;
+          font-weight: bold;
+        "
+      ></div>
+      <p id="rcorners1"></p>
+      <h3 id="itm1"></h3>
     </div>
 
     <div id="estadistica">
-      <h1>Estadistica</h1>
-
-  </div>
+      <h4>Estadistica</h4>
+    </div>
     <script type="module" src="./scripts/index.js"></script>
-    <script src="./graficas/morris.min.js"></script>
-    <script type="module" src="./data/data.js" ></script>
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  
   </body>
 </html>
